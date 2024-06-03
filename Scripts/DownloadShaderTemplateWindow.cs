@@ -27,6 +27,11 @@ public class DownloadShaderTemplateWindow : EditorWindow
 
             DownloadCell("Noise", "Shader-Noise", "Noise.hlsl");
             DownloadCell("Wave", "Shader-Wave", "Wave.hlsl");
+            DownloadCell("Curve", "Shader-Curve", "Curve.hlsl");
+            DownloadCell("Macro", "Shader-Macro", "Macro.hlsl");
+            DownloadCell("MathFunction", "Shader-MathFunction", "MathFunction.hlsl");
+            DownloadCell("ColorFunction", "Shader-ColorFunction", "ColorFunction.hlsl");
+            DownloadCell("SDF", "Shader-SDF", "SDF.hlsl");
         }
     }
 
