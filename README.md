@@ -18,3 +18,4 @@
 * MathFunction
 * ColorFunction
 * SDF
+* GraphicFunction
