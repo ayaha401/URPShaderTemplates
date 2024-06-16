@@ -32,6 +32,7 @@ public class DownloadShaderTemplateWindow : EditorWindow
             DownloadCell("MathFunction", "Shader-MathFunction", "MathFunction.hlsl");
             DownloadCell("ColorFunction", "Shader-ColorFunction", "ColorFunction.hlsl");
             DownloadCell("SDF", "Shader-SDF", "SDF.hlsl");
+            DownloadCell("GraphicFunction", "Shader-GraphicFunction", "GraphicFunction.hlsl");
         }
     }
 
