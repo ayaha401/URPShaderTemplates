@@ -2,6 +2,9 @@
 * Shader書く時のテンプレートを生成する
 * 一部スクリプトをGitHubから直接ダウンロードする
 
+# 前提パッケージ
+Editor Coroutines
+
 # 不具合
 * Editor Coroutinesをインストールしないとエラーが出る
 
