@@ -23,7 +23,22 @@ public class DownloadShaderTemplateWindow : EditorWindow
         using (new EditorGUILayout.VerticalScope())
         {
             GUILayout.Label("OutputPath");
-            _outputPath = GUILayout.TextField(_outputPath);
+
+            var selectObj = Selection.activeObject;
+            if (selectObj != null)
+            {
+                var outputPath = AssetDatabase.GetAssetPath(selectObj);
+                if (AssetDatabase.IsValidFolder(outputPath) == false)
+                {
+                    outputPath = Path.GetDirectoryName(outputPath);
+                }
+                
+                _outputPath = GUILayout.TextField(outputPath);
+            }
+            else
+            {
+                _outputPath = GUILayout.TextField(_outputPath);
+            }
 
             DownloadCell("Noise", "Shader-Noise", "Noise.hlsl");
             DownloadCell("Wave", "Shader-Wave", "Wave.hlsl");
